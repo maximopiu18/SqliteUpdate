@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 import java.util.ArrayList;
 
@@ -138,5 +139,6 @@ public class Contactos {
 
     public void eliminarContacto(String id ){
         DB.delete(N_TABLA, ID_FILA + " = " + id, null);
+        Log.e("eliminando","eliminando....");
     }
 }
