@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#ffffff"
+    >
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+        >
+        <ImageView
+            android:id="@+id/item_photo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/img_1"
+            android:layout_margin="12dp"
+            />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:weightSum="100"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="70"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+                <TextView
+                    android:id="@+id/item_name"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:text="Nombre"
+                    />
+                <TextView
+                    android:id="@+id/item_phone"
+                    android:layout_margin="12dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="70"
+                    android:text="044550000000"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="30"
+                android:orientation="vertical"
+                android:weightSum="100"
+                >
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal"
+                    android:layout_weight="35"
+                    android:weightSum="100"
+                    >
+                    <ImageButton
+                        android:background="#ffffff"
+                        android:id="@+id/item_button_edit"
+                        android:src="@android:drawable/ic_menu_edit"
+                        android:layout_weight="50"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent" />
+                    <ImageButton
+                        android:background="#ffffff"
+                        android:id="@+id/item_button_delete"
+                        android:src="@android:drawable/ic_delete"
+                        android:layout_weight="50"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent" />
+                </LinearLayout>
+                <ImageButton
+                    android:background="#ffffff"
+                    android:id="@+id/item_button"
+                    android:src="@android:drawable/sym_action_call"
+                    android:layout_weight="65"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
